@@ -91,6 +91,7 @@ return function(path)
         if #line > 0 then
             if string.sub(line, 1, 2) ~= "//" then
                 line = hexUtils.stringSplit(line,"//")[1]
+                line = string.gsub(line, '^%s*(.-)%s*$', '%1')
             end
             hex:append(getPattern(line))
         end

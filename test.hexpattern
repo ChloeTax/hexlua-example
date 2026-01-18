@@ -1,90 +1,8 @@
-// Numerical Reflection: 0
-// Huginn's Gambit
-
-// Whisper Reflection
-// Comma Reflection
-// Separation Distillation
-// {
-
-//     {
-//         String: "-"
-//     }
-//     Flock's Disintegration
-//     Separation Distillation
-//     Flock's Disintegration
-//     Input Purification
-//     Jester's Gambit
-//     Input Purification
-//     Jester's Gambit
-    
-
-//     Muninn's Reflection
-//     Rotation Gambit II
-//     Prospector's Gambit
-//     Subtractive Distillation
-//     Huginn's Gambit
-//     Numerical Reflection: 1
-//     Muninn's Reflection
-//     Gemini Gambit
-//     Muninn's Reflection
-//     Flock's Gambit
-//     Rotation Gambit
-//     Huginn's Gambit
-//     Jester's Gambit
-//     Speaker's Distillation
-//     Running Sum Purification
-//     {
-//         Gemini Decomposition
-//         Scrivener's Purification
-
-//         Gemini Decomposition
-//         Length Purification
-//         Numerical Reflection: 3
-//         Subtractive Distillation
-//         Gemini Decomposition
-//         Numerical Reflection: 2
-//         Division Distillation
-
-//         Rotation Gambit
-//         Undertaker's Gambit
-//         Prospector's Gambit
-//         Numerical Reflection: 0
-//         Jester's Gambit
-//         Selection Exaltation
-//         Rotation Gambit II
-//         Numerical Reflection: 3
-//         Fisherman's Gambit
-//         Selection Exaltation
-//         Equality Distillation
-
-//         {
-//             Reveal
-//             Muninn's Reflection
-//             Additive Distillation
-//             Huginn's Gambit
-//         }
-//         {
-//             Bookkeeper's Gambit: v
-//         }
-//         Augur's Exaltation
-//         Hermes' Gambit
-
-//     }
-//     Jester's Gambit
-//     Thoth's Gambit
-//     Bookkeeper's Gambit: v
-// }
-// Jester's Gambit
-// Thoth's Gambit
-// Bookkeeper's Gambit: v
 
 
 
-
-Numerical Reflection: 123123123
-Gemini Decomposition
-Scrivener's Purification
-Length Purification
+Numerical Reflection: 5
+Numerical Reflection: 10
 
 
 Muninn's Reflection      // range generator; int, int, -> [int1, ..., int2]
@@ -102,8 +20,6 @@ Huginn's Gambit          // ...
 Jester's Gambit          // ...
 Speaker's Distillation   // ...
 Running Sum Purification // ...
-
-
 
 
 
