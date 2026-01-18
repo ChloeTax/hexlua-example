@@ -6,7 +6,7 @@ math.randomseed(os.time())
 
 return {
     platform = "Lua",
-    print = print,
+    print = function(text, player) print(text) end,
     random = math.random,
     require = function(path, ...)
         local file = requireCache[path]
