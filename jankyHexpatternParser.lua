@@ -29,6 +29,17 @@ local function startsWithout(inputstr, check)
     return string.sub(inputstr,#check+1,-1)
 end
 
+local function stringSplit(inputstr, sep)
+    if sep == nil then
+        sep = "%s"
+    end
+    local t = {}
+    for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+        table.insert(t, str)
+    end
+    return t
+end
+
 local function gen_num(num)
     local num = math.floor(num)
     local pattern = ""
