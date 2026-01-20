@@ -1,5 +1,16 @@
 patternTable = {}
 
+local function stringSplit(inputstr, sep)
+    if sep == nil then
+        sep = "%s"
+    end
+    local t = {}
+    for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+        table.insert(t, str)
+    end
+    return t
+end
+
 for anglesig,pattern in pairs(Hexcasting.Actions) do
     patternTable[pattern.name] = anglesig
 end
@@ -69,7 +80,7 @@ local function specialHandler(line)
     if startsWith(line,"Bookkeeper's Gambit: ") then return poptable[startsWithout(line, "Bookkeeper's Gambit: ")] end
     if startsWith(line,"String: ") then return Hexcasting.Iotas.moreiotas.string:new(startsWithout(line, "String: "):sub(2, -2)) end
     if startsWith(line,"Numerical Reflection: ") then
-      local number = tonumber(hexUtils.stringSplit(line, "Numerical Reflection: ")[1])
+      local number = tonumber(stringSplit(line, "Numerical Reflection: ")[1])
       local pattern
       if number == math.floor(number) then
         pattern = gen_num(number)
@@ -101,7 +112,7 @@ return function(path)
         local line = string.gsub(line, '^%s*(.-)%s*$', '%1')
         if #line > 0 then
             if string.sub(line, 1, 2) ~= "//" then
-                line = hexUtils.stringSplit(line,"//")[1]
+                line = stringSplit(line,"//")[1]
                 line = string.gsub(line, '^%s*(.-)%s*$', '%1')
             end
             hex:append(getPattern(line))
@@ -113,7 +124,7 @@ end
 
 
 -- local hex = Hexcasting.Iotas.hexcasting.list:new()
--- for _,line in pairs(hexUtils.stringSplit(strhex,"\n")) do
+-- for _,line in pairs(stringSplit(strhex,"\n")) do
 --     print(patternNames[line])
 --     hex:append(Hexcasting.Iotas.hexcasting.pattern:new("EAST", patternNames[line]))
 -- end    
